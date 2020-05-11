@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Tpe" content="text/html; charset=UTF-8"/>
+        <title>Video- HTML5</title>
+        </head>
+    <body>
+       <div id="demo"></div> 
+       <button onclick="geLocation">Get Location</button>
+        
+    </body>
+    <script>
+        // Lấy toạ độ hiện tại
+        var x = document.getElementById("demo");
+        //Lấy toạ độ hiện tại
+        function getLocation()
+        {
+            navigator.getlocation.getCurrentPosition(showPosition2);
+        }
+    function showPosition(position)
+    {
+        x.innerHTML = "Latitude:" + position.coords.latitude +
+         "<br>Longitude: " + position.coords.longitude;
+    }
+
+    </script>
+</html> 
